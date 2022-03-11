@@ -28,6 +28,8 @@ These two sections contain entries like "I have started working on the apis for 
 
 Will also be possible to flag a roadblock on any of the entries of the recap.
 
+The recorder can confirm when the standup will end, with a button that appears 
+
 ### Recap email
 At the end of the stand-up session a recap email is sent to all of the participating team members.
 
