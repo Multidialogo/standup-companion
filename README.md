@@ -24,7 +24,7 @@ He sees the members list, and can confirm when the standup will start, with a bu
 
 Clicking on a member a dialog will open divided in two branches: done yesterday, planned for today.
 
-These two sections contain entries like "I have started working on the apis for the retrival of cabbages".
+These two sections contain entries that are statements like "I have started working on the apis for the retrival of cabbages" or "Will complete the cabbages apis"
 
 Will also be possible to flag a roadblock on any of the entries of the recap.
 
