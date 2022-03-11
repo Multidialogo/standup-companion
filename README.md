@@ -13,18 +13,20 @@ Will also list the evening reminder to help team-mates to recall activities done
 
 ### Random recorder election
 Once it's stand-up time a recorder is elected between members to write the stand-up recap.
+The recorder is notified with browser deskotp notification that today he will be the recorder.
+
+As he login will be now allowed to access to the recording panel (because he is the recorder), other users will not be enabled to access it.
 
 ### Recording panel
-The elected recorder will have an interface to pin other members stand-up recap, divided in two branches: done yesterday, planned for today.
+The elected recorder will have an interface to pin other members stand-up recap.
+
+He sees the members list, and can confirm when the standup will start, with a button.
+
+Clicking on a member a dialog will open divided in two branches: done yesterday, planned for today.
+
+These two sections contain entries like "I have started working on the apis for the retrival of cabbages".
 
 Will also be possible to flag a roadblock on any of the entries of the recap.
-
-Members other than the elected recorder can read the recap, but not edit it.
-
-The recorder panel has also a timer, that will notify with acoustic adn graphic alarms when the turn of the talking mate is over.
-The timer duration is customizable.
-
-When the turn of a mate will elapse, the elected recorded is asked with a prompt that will ask to him if he want to give additional 1 minute time to the talking member or to pass to another one (random selected by the application).
 
 ### Recap email
 At the end of the stand-up session a recap email is sent to all of the participating team members.
