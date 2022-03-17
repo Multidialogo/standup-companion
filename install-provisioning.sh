@@ -34,12 +34,4 @@ http_port=8080
     --volume ${PWD}/source:/app \
     --user $(id -u):$(id -g) \
     composer install
-
-  echo "Starting local services..."
-
-  . ./source/vendor/bin/sail up -d
-
-  ping -c 3 "${HTTP_HOST}" || exit 1
-
-  xdg-open "http://${http_host}:${http_port}"
 )
