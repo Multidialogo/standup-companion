@@ -34,4 +34,7 @@ http_port=8080
     --volume ${PWD}/source:/app \
     --user $(id -u):$(id -g) \
     composer install
+
+  echo "Local provisioning successfully installed!"
+  echo "You can now run './source/vendor/bin/sail up -d' to run the local services."
 )
