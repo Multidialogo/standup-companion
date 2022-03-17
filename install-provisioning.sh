@@ -16,15 +16,15 @@ http_port=8080
 
   if [ ! -f "${provisioning_dir}/.env" ]
   then
-    read -n 1 -s -r -p "File .env does not exist. Do you want to copy it from .env.dist? (y/n)" response_copy
-    echo ""
-    if [[ "${response_copy}" == "y" || "${response_copy}" == "Y" ]]
-    then
-      cp -p "${provisioning_dir}/.env.dist" "${provisioning_dir}/.env"
-    fi
+    cp -p "${provisioning_dir}/.env.dist" "${provisioning_dir}/.env"
   fi
 
-  echo "Please, check variables in the .env file."
+  if [ ! -f "${source_dir}/.env" ]
+  then
+    cp -p "${source_dir}/.env.dist" "${source_dir}/.env"
+  fi
+
+  echo "Please, check variables in the .env files (both the one in the provisioning root, and the one in the source root)."
   read -n 1 -s -r -p "Press any key to continue when you are sure every variable is correct."
   echo ""
 
