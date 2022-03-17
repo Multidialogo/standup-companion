@@ -1,6 +1,6 @@
 # Local provisioning
 
-### Before to start
+### Before starting
 
 Add following entry in your host configuration:
 
@@ -31,28 +31,22 @@ docker run --rm --interactive --tty \
   composer install
 ```
 
-#### Actually run the service
-
-```bash
-. ./source/vendor/bin/sail up -d
-```
-
 ## Usage
 
 It is recommended to use [Laravel Sail](https://laravel.com/docs/9.x/sail) for managing services and containers. Docker compose is still needed in order to provision local environment.
 
-### Start and stop containers
-
-Stopping containers:
-
-```bash
-. ./source/vendor/bin/sail down --remove-orphans
-```
+### Start and stop local services
 
 Starting containers:
 
 ```bash
 . ./source/vendor/bin/sail up -d
+```
+
+Stopping containers:
+
+```bash
+. ./source/vendor/bin/sail down --remove-orphans
 ```
 
 ### Accessing website
