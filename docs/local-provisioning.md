@@ -22,13 +22,18 @@ If you prefer to install the local provisioning manually, or simply want to know
 
 Copy the existing *.env.dist* file that is in the root of the repository. The new file must be named *.env* in order to work without further configurations.
 
+#### Laravel environment file
+
+Copy the existing *.env.dist* file that is in the source directory. The new file must be named *.env* in order to work.
+
+
 #### Build vendor directory
 
 ```bash
 docker run --rm --interactive --tty \
   --volume ${PWD}/source:/app \
   --user $(id -u):$(id -g) \
-  composer install
+  composer:latest install
 ```
 
 ## Usage
@@ -40,13 +45,13 @@ It is recommended to use [Laravel Sail](https://laravel.com/docs/9.x/sail) for m
 Starting containers:
 
 ```bash
-. ./source/vendor/bin/sail up -d
+./source/vendor/bin/sail up -d
 ```
 
 Stopping containers:
 
 ```bash
-. ./source/vendor/bin/sail down --remove-orphans
+./source/vendor/bin/sail down --remove-orphans
 ```
 
 ### Accessing website
