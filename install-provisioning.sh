@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
-app_name="standup-companion"
 provisioning_dir="${PWD}"
 source_dir="${provisioning_dir}/source"
-repo_source="git@github.com:Multidialogo/${app_name}.git"
-http_host="standup-companion.local"
-http_port=8080
 
 (
   set -o errexit
@@ -33,8 +29,20 @@ http_port=8080
   docker run --rm --interactive --tty \
     --volume ${PWD}/source:/app \
     --user $(id -u):$(id -g) \
-    composer install
+    composer:latest install
+
+  echo "Building node modules..."
+
+  docker run --rm --interactive --tty \
+    --workdir /app \
+    --volume ${PWD}/source:/app \
+    --user $(id -u):$(id -g) \
+    node:lts-slim /bin/sh -c "npm install; npm run dev"
+
+  echo "Migrations..."
+
+  docker compose run standup_companion_local_service php artisan migrate
 
   echo "Local provisioning successfully installed!"
-  echo "You can now run './source/vendor/bin/sail up -d' to run the local services."
+  echo "You can now run 'docker compose up -d' to start local services."
 )
