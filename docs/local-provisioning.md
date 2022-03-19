@@ -100,7 +100,6 @@ docker compose down --remove-orphans
 ```
 
 Using Laravel Sail:
-
 ```bash
 ./source/vendor/bin/sail down --remove-orphans
 ```
