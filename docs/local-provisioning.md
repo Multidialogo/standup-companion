@@ -2,7 +2,8 @@
 
 ## Table of content
 
-* [Before starting](#before-starting)
+* [Requirements](#requirements)
+  * [Required packages/software](#required-packagessoftware)
   * [Host configuration](#host-configuration)
 * [Installation steps](#installation-steps)
   * [Docker compose environment file](#docker-compose-environment-file)
@@ -15,7 +16,12 @@
   * [Accessing website](#accessing-website)
   * [Accessing running containers](#accessing-running-containers)
 
-## Before Starting
+## Requirements
+
+### Required packages/software
+
+* git
+* Docker compose (v2)
 
 ### Host configuration
 
@@ -74,11 +80,13 @@ For managing services and containers, you can choose to use
 #### Starting containers
 
 Using Docker Compose (v2):
+
 ```bash
 docker compose up -d
 ```
 
 Using Laravel Sail:
+
 ```bash
 ./source/vendor/bin/sail up -d
 ```
@@ -86,6 +94,7 @@ Using Laravel Sail:
 #### Stopping containers
 
 Using Docker Compose (v2):
+
 ```bash
 docker compose down --remove-orphans
 ```
