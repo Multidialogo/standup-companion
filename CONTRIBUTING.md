@@ -13,7 +13,18 @@ suggested** before proceed further.
 
 ## Local provisioning
 
-See [here](docs/local-provisioning.md) for details about the local provisioning.
+This project is provided with all the tools needed to the software full working on your local workstation we call this 
+set of tools and procedures *Local provisioning*.
+
+Local provisioning MUST NOT be considered just a facility to use to make the development easier but a requirement to 
+contribute to this project.
+
+Building and testing code on a unified environment guarantees that software will build and run the same way it will in 
+production on the contributor workstation.
+
+So local provisioning is the place where start to look and work around before starting with contribution.
+
+More detailed instruction to start provision the project in local are available [here](docs/local-provisioning.md).
 
 ## Writing code
 
