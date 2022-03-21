@@ -7,9 +7,10 @@ A stand-up meeting is a meeting in which attendees typically participate while s
 long periods is intended to keep the meetings short.
 
 The meeting should usually take place at the same time and place every working day. All team members are encouraged to 
-attend, but the meetings are not postponed if some of the team members are not present. One of the crucial features is 
-that the meeting is a communication opportunity among team members and not a status update to management or 
-stakeholders. 
+attend, but the meetings are not postponed if some team members are not present. 
+
+One of the crucial features is  that the meeting is a communication opportunity among team members and not a status update 
+to management or stakeholders. 
 
 Although it is sometimes referred to as a type of status meeting, the structure of the meeting is meant to promote 
 follow-up conversation, as well as to identify issues before they become too problematic. The practice also promotes 
@@ -36,10 +37,10 @@ done the previous day.
 
 ### Random recorder election
 Once it's stand-up time a recorder is elected between members to write the stand-up recap.
-The recorder is notified with browser deskotp notification that today he will be the recorder.
+The recorder is notified with browser desktop notification that today he will be the recorder.
 
-As he login will be now allowed to access to the recording panel (because he is the recorder), other users will not be 
-enabled to access it.
+As the user does the login he will be now allowed to access to the recording panel (because he is the recorder), other
+users will not be enabled to access it.
 
 ### Recording panel
 The elected recorder will have an interface to pin other members stand-up recap.
